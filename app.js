@@ -4,6 +4,7 @@ const navList = document.querySelector('.nav-list');
 const closeIcon = document.querySelector('.nav-top i');
 const title = document.querySelectorAll('.title');
 const products= document.querySelector('.products-list');
+const blur = document.querySelector('.blur');
 barIcon.onclick = function(){
     document.querySelector('.blur').classList.add('active');
     nav.classList.add('open');
@@ -15,7 +16,10 @@ closeIcon.onclick = function(){
     document.querySelector('.blur').classList.remove('active');
 }
 
-
+blur.onclick = function(){
+    nav.classList.remove('open');
+    document.querySelector('.blur').classList.remove('active');
+}
 
 const productsList = [
     {

@@ -804,6 +804,11 @@
     .product img{
         height: 40%;
     }
+    .product .quick-view{
+        top:16%;
+        left: 10%;
+        width: 85%;
+    }
 }
 
 /* footer */
@@ -904,6 +909,7 @@
         /* padding: 6rem 26rem; */
     }
     .quotes .glide__slide img{
+        object-fit: cover;
         width: 10rem;
         height: 10rem;
         border-radius: 50%;
@@ -996,12 +1002,13 @@
         margin-bottom: 2rem;
         padding: 1.2rem 4rem;
         font-size: 1.6rem;
+        border: 1px solid var(--black);
     }
 
     .phone-new .glide__slide button:hover{
         background: black;
         color: white;
-        border: none;
+        /* border: none; */
     }
 
     @media only screen and (max-width:568px){
@@ -1068,6 +1075,10 @@
         color: white;
         padding: 1.3rem 2rem;
         text-align: center;
+    }
+
+    .letter-right span:hover{
+        cursor: pointer;
     }
 
     @media only screen and (max-width:768px){
